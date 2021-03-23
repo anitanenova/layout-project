@@ -30,6 +30,7 @@
     "sass-lint": "^1.13.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "gem": "^2.4.3",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",

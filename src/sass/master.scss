@@ -1,27 +1,18 @@
 @charset "UTF-8";
 
 // 1. Utils
-@import
-  'utils/variables',
-  'utils/functions',
-  'utils/mixins';
+@import "utils/variables", "utils/functions", "utils/mixins",
+  "utils/breakpoints";
 
 // 3. Base
-@import
-  'base/fonts',
-  'base/typography',
-  'base/normalize';
+@import "base/fonts", "base/typography", "base/normalize", "base/containers",
+  "base/wrappers";
 
 // 4. Layout
-@import
-  'layout/header',
-  'layout/footer';
+@import "layout/header", "layout/footer";
 
 // 5. Components
-@import
-  'components/buttons',
-  'components/navigation';
+@import "components/buttons", "components/navigation", "components/dropdown";
 
 // 6. Page-specific styles
-@import
-  'pages/home';
+@import "pages/home";
