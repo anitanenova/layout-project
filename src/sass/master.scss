@@ -17,9 +17,14 @@
 @import "components/dropdown";
 @import "components/sections/intro";
 @import "components/sections/articles";
+@import "components/image-description";
 
 // 6. Vendors
-@import "/node_modules/foundation-sites/dist/css/foundation.min.css";
+// sass-lint:disable
+@import "../../node_modules/foundation-sites/scss/foundation.scss";
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+// sass-lint:enable
 
 // 6. Page-specific styles
 @import "pages/home";
