@@ -1,6 +1,13 @@
 .header {
-  height: 100%;
+  width: 100%;
   border-bottom: 1px solid $color-gray-500;
+
+  &-content-wrapper {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    height: 100%;
+  }
 
   &-main {
     height: 100%;

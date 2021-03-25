@@ -12,7 +12,11 @@
 @import "layout/header", "layout/footer";
 
 // 5. Components
-@import "components/buttons", "components/navigation", "components/dropdown";
+@import "components/buttons";
+@import "components/navigation";
+@import "components/dropdown";
+@import "components/sections/intro";
+@import "components/sections/articles";
 
 // 6. Vendors
 @import "/node_modules/foundation-sites/dist/css/foundation.min.css";

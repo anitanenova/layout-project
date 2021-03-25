@@ -1,1 +1,6 @@
-// This file contains styles that are specific to the home page.
+.home {
+  &-main {
+    display: grid;
+    grid-template-rows: 760px 1250px 1220px;
+  }
+}

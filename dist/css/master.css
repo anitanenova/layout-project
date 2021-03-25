@@ -378,12 +378,18 @@ summary {
 
 .page-content-wrapper {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .header {
-  height: 100%;
+  width: 100%;
   border-bottom: 1px solid #e5e5e5; }
+
+.header-content-wrapper {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  height: 100%; }
 
 .header-main {
   height: 100%;
@@ -456,3 +462,32 @@ summary {
   font-size: 0.9em;
   font-weight: 500;
   text-decoration: none; }
+
+.intro-subtitle {
+  text-transform: uppercase;
+  font-size: 0.6em; }
+
+.intro-title {
+  font-size: 2.5em;
+  font-weight: 500; }
+
+.intro-text {
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 1.7em;
+  color: #868686; }
+
+.intro-image .image-wrapper {
+  max-width: 480px;
+  position: relative; }
+
+.intro-image .image-wrapper img {
+  position: absolute;
+  top: 100px; }
+
+.articles {
+  background-color: #f6f4ef; }
+
+.home-main {
+  display: grid;
+  grid-template-rows: 760px 1250px 1220px; }
