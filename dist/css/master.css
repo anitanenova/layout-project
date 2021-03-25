@@ -1,6 +1,9 @@
 .cendered {
   text-align: center; }
 
+.section-light {
+  background-color: #f6f4ef; }
+
 html {
   font-family: "Lexend", sans-serif; }
 
@@ -388,9 +391,7 @@ summary {
   border-bottom: 1px solid #e5e5e5; }
 
 .header-content-wrapper {
-  width: 100%;
-  max-width: 1450px;
-  margin: 0 auto;
+  margin: 0 3em;
   height: 100%; }
 
 .header-main {
@@ -431,6 +432,16 @@ summary {
 .header-search:hover {
   cursor: pointer; }
 
+.btn-inline {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.6em;
+  border-bottom: 1px solid #000000;
+  color: #000000; }
+
+.btn-inline:hover {
+  cursor: pointer; }
+
 .dropdown {
   position: relative; }
 
@@ -468,7 +479,7 @@ summary {
   font-weight: 500;
   text-decoration: none; }
 
-.intro-wrapper {
+.section-intro-wrapper {
   display: grid;
   grid-template-rows: 1fr;
   height: 100%;
@@ -476,36 +487,33 @@ summary {
   grid-column-gap: 70px;
   align-items: center; }
 
-.intro-subtitle {
+.section-intro-wrapper .intro-subtitle {
   text-transform: uppercase;
   font-size: 0.6em; }
 
-.intro-title {
-  font-size: 2.6em;
-  font-weight: 500;
-  line-height: 1.2em;
+.section-intro-wrapper .intro-title {
   margin: 15px 0 25px; }
 
-.intro-text {
+.section-intro-wrapper .intro-text {
   font-weight: 600;
   font-size: 0.9em;
   line-height: 1.7em;
   color: #868686; }
 
-.intro-image {
+.section-intro-wrapper .intro-image {
   position: relative;
   height: 100%; }
 
-.intro-image .image-wrapper {
+.section-intro-wrapper .intro-image .image-wrapper {
   max-width: 480px;
   position: absolute;
   bottom: -50px; }
 
-.intro-image .image-wrapper img {
+.section-intro-wrapper .intro-image .image-wrapper img {
   width: 100%;
   height: 100%; }
 
-.articles {
+.section-articles {
   background-color: #f6f4ef;
   padding-top: 50px;
   display: flex;
@@ -513,11 +521,11 @@ summary {
   align-items: center;
   justify-content: center; }
 
-.articles-title {
-  font-size: 3em;
-  margin-top: 0; }
+.section-articles .articles-title {
+  margin-top: 0;
+  margin-bottom: 10px; }
 
-.articles-description {
+.section-articles .articles-description {
   max-width: 30%;
   font-size: 0.9em;
   text-align: center;
@@ -554,7 +562,8 @@ summary {
 .image-title {
   text-transform: uppercase;
   font-size: 0.6em;
-  font-weight: 500; }
+  font-weight: 500;
+  letter-spacing: 0.2em; }
 
 .image-text {
   font-size: 1em;
@@ -565,7 +574,8 @@ summary {
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: 500;
-  margin: 0; }
+  margin: 0;
+  letter-spacing: 0.1em; }
 
 .image-author-wrapper {
   display: flex;
@@ -632,16 +642,6 @@ summary {
   line-height: 1.5em;
   font-weight: 500;
   color: #868686; }
-
-.link-default {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 0.6em;
-  border-bottom: 1px solid #000000;
-  color: #000000; }
-
-.link-default:hover {
-  cursor: pointer; }
 
 /**
  * Foundation for Sites

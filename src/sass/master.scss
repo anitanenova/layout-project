@@ -6,6 +6,7 @@
 @import "utils/mixins";
 @import "utils/breakpoints";
 @import "utils/centered";
+@import "utils/backgrounds";
 
 // 3. Base
 @import "base/fonts", "base/typography", "base/normalize", "base/containers",
@@ -22,7 +23,6 @@
 @import "components/sections/articles";
 @import "components/image-description";
 @import "components/article";
-@import "components/links";
 
 // 6. Vendors
 // sass-lint:disable
