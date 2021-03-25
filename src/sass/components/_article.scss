@@ -1,0 +1,71 @@
+.article {
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &-image-wrapper {
+    max-width: 300px;
+    position: relative;
+    max-height: 350px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .badge {
+      &-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 2px;
+        padding: 15px 30px 5px 0px;
+        background-color: $color-beige-300;
+      }
+
+      &-image {
+        max-width: 25px;
+        max-height: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-title {
+        margin: 0 0 0 5px;
+      }
+    }
+  }
+
+  &-info {
+    margin: 25px 0;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  &-position {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 5px 0 10px 0;
+  }
+
+  &-title,
+  &-text {
+    margin: 0;
+  }
+
+  &-text {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: $color-gray-700;
+  }
+}

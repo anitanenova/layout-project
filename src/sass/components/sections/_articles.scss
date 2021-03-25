@@ -1,3 +1,23 @@
 .articles {
   background-color: $color-beige-300;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-title {
+    font-size: 3em;
+    margin-top: 0;
+  }
+
+  &-description {
+    max-width: 30%;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: $color-gray-700;
+    margin-bottom: 70px;
+  }
 }
