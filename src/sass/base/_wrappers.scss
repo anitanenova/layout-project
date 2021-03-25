@@ -3,35 +3,11 @@
   display: grid;
   grid-template-rows: 130px 1fr 312px;
 
-  @include for-phone-only {
-    grid-template-rows: 130px 1fr 567px;
-  }
-
-  @include for-tablet-portrait-up {
-    grid-template-rows: 130px 1fr auto;
-  }
-
-  @include for-desktop-up {
-    grid-template-rows: 130px 1fr 312px;
-  }
+  // TODO with media queries
 }
 
 .page-content-wrapper {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
-
-  @include for-phone-only {
-    width: 335px;
-  }
-
-  @include for-tablet-portrait-up {
-    width: 80%;
-  }
-  @include for-tablet-landscape-up {
-    width: 80%;
-  }
-
-  @include for-desktop-up {
-    width: 1400px;
-  }
 }

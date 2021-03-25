@@ -14,5 +14,8 @@
 // 5. Components
 @import "components/buttons", "components/navigation", "components/dropdown";
 
+// 6. Vendors
+@import "/node_modules/foundation-sites/dist/css/foundation.min.css";
+
 // 6. Page-specific styles
 @import "pages/home";

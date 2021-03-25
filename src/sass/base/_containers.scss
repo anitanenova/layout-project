@@ -4,23 +4,6 @@
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: baseline;
-  height: 100%;
-}
-
-.columns {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
 .full-width {
   width: 100%;
 }
