@@ -1,0 +1,21 @@
+.literature {
+  .preview {
+    &-image-wrapper {
+      margin-bottom: 44px;
+    }
+
+    &-author {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+      margin: 28px 0;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+}

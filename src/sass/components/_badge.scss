@@ -1,0 +1,36 @@
+.badge {
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-bg-light {
+    background-color: $color-beige-300;
+  }
+
+  &-image {
+    &-small {
+      max-width: 20px;
+      max-height: 20px;
+    }
+
+    &-medium {
+      max-width: 28px;
+      max-height: 28px;
+    }
+  }
+
+  &-title {
+    margin: 0 0 0 5px;
+
+    &-medium {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.image-badge-wrapper {
+  padding: 15px 30px 5px 0px;
+}

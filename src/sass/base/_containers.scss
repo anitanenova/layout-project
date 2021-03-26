@@ -11,3 +11,9 @@
 .full-height {
   height: 100%;
 }
+
+.cendered-vertically {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
