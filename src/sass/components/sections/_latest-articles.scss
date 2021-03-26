@@ -1,0 +1,20 @@
+.latest-articles-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .articles {
+    &-title {
+      margin-top: 0;
+      margin-bottom: 1.6em;
+    }
+
+    &-btn {
+      align-self: center;
+    }
+  }
+}
+
+.list-articles {
+  display: flex;
+  flex-flow: row wrap;
+}

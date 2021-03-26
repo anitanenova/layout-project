@@ -1,0 +1,33 @@
+.card {
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+    margin-bottom: 6em;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &-image-wrapper {
+    align-self: start;
+    max-width: 150px;
+    border-radius: 50%;
+    max-height: 150px;
+
+    img {
+      border-radius: 50%;
+      height: 100%;
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+
+  &-info {
+    align-self: end;
+  }
+
+  &-title {
+    line-height: 1.4em;
+    margin: 15px 0;
+  }
+}

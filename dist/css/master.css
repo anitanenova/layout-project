@@ -451,6 +451,15 @@ summary {
 .btn-inline:hover {
   cursor: pointer; }
 
+.btn-primary {
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  font-weight: 600; }
+
+.btn-big {
+  padding: 20px 95px; }
+
 .dropdown {
   position: relative; }
 
@@ -652,19 +661,21 @@ summary {
 .image-badge-wrapper {
   padding: 15px 30px 5px 0px; }
 
-.literature .preview-image-wrapper {
+.section-literature .preview-image-wrapper {
   margin-bottom: 44px; }
 
-.literature .preview-author {
+.section-literature .preview-author {
   text-transform: uppercase;
   font-size: 0.7em;
   letter-spacing: 0.1em;
   font-weight: 500;
   margin: 28px 0; }
 
-.literature-title {
+.section-literature .literature-list {
+  padding-left: 36px; }
+
+.section-literature .literature-title {
   font-weight: 600;
-  font-size: 2em;
   margin-bottom: 40px; }
 
 .list-item {
@@ -693,6 +704,51 @@ summary {
 
 .item-title, .item-text {
   margin: 0; }
+
+.line-default {
+  border: 1px solid #b2b2b2; }
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 30px;
+  margin-bottom: 6em;
+  width: 100%;
+  max-width: 500px; }
+
+.card-image-wrapper {
+  align-self: start;
+  max-width: 150px;
+  border-radius: 50%;
+  max-height: 150px; }
+
+.card-image-wrapper img {
+  border-radius: 50%;
+  height: 100%;
+  max-width: 150px;
+  max-height: 150px; }
+
+.card-info {
+  align-self: end; }
+
+.card-title {
+  line-height: 1.4em;
+  margin: 15px 0; }
+
+.latest-articles-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.latest-articles-wrapper .articles-title {
+  margin-top: 0;
+  margin-bottom: 1.6em; }
+
+.latest-articles-wrapper .articles-btn {
+  align-self: center; }
+
+.list-articles {
+  display: flex;
+  flex-flow: row wrap; }
 
 /**
  * Foundation for Sites
@@ -1333,4 +1389,4 @@ summary {
 
 .home-main {
   display: grid;
-  grid-template-rows: 680px 1100px 1050px auto 1250px auto; }
+  grid-template-rows: 680px 1100px 1050px auto 1100px auto; }

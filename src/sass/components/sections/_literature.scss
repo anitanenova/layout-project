@@ -1,4 +1,4 @@
-.literature {
+.section-literature {
   .preview {
     &-image-wrapper {
       margin-bottom: 44px;
@@ -13,9 +13,14 @@
     }
   }
 
-  &-title {
-    font-weight: 600;
-    font-size: 2em;
-    margin-bottom: 40px;
+  .literature {
+    &-list {
+      padding-left: 36px;
+    }
+
+    &-title {
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
   }
 }
