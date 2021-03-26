@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cendered {
   text-align: center; }
 
@@ -441,15 +442,15 @@ summary {
 .header-search:hover {
   cursor: pointer; }
 
+.btn:hover {
+  cursor: pointer; }
+
 .btn-inline {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.6em;
   border-bottom: 1px solid #000000;
   color: #000000; }
-
-.btn-inline:hover {
-  cursor: pointer; }
 
 .btn-primary {
   border: 1px solid #000000;
@@ -672,38 +673,43 @@ summary {
   margin: 28px 0; }
 
 .section-literature .literature-list {
-  padding-left: 36px; }
+  padding-left: 50px; }
 
 .section-literature .literature-title {
   font-weight: 600;
   margin-bottom: 40px; }
 
-.list-item {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  grid-column-gap: 30px;
-  grid-template-rows: 1fr 1fr;
-  margin-bottom: 35px;
-  align-items: center; }
+.list-ordered {
+  counter-reset: number;
+  list-style-type: none;
+  padding: 0; }
 
-.item-number {
+.list-ordered li::before {
+  counter-increment: number;
+  content: counter(number) " ";
   font-size: 3.5em;
   font-weight: 500;
   grid-row: 1/3;
   line-height: 0.8em;
   align-self: flex-start; }
 
-.item-title {
+.list-item {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 30px 1fr;
+  grid-column-gap: 35px;
+  margin-bottom: 35px; }
+
+.list-item .item-title {
   grid-row: 1/2;
   font-weight: 600;
-  align-self: end; }
-
-.item-text {
-  grid-row: 2/3;
-  font-size: 0.9em; }
-
-.item-title, .item-text {
+  align-self: end;
   margin: 0; }
+
+.list-item .item-text {
+  grid-row: 2/3;
+  font-size: 0.9em;
+  margin: 5px 0 0 0; }
 
 .line-default {
   border: 1px solid #b2b2b2; }

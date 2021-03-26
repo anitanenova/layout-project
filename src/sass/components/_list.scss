@@ -1,36 +1,39 @@
 .list {
+  &-ordered {
+    counter-reset: number;
+    list-style-type: none;
+    padding: 0;
+
+    li::before {
+      counter-increment: number;
+      content: counter(number) "\a0";
+      font-size: 3.5em;
+      font-weight: 500;
+      grid-row: 1/3;
+      line-height: 0.8em;
+      align-self: flex-start;
+    }
+  }
   &-item {
     display: grid;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 30px 1fr;
-    grid-column-gap: 30px;
-    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 35px;
     margin-bottom: 35px;
-    align-items: center;
-  }
-}
 
-.item {
-  &-number {
-    font-size: 3.5em;
-    font-weight: 500;
-    grid-row: 1/3;
-    line-height: 0.8em;
-    align-self: flex-start;
-  }
+    .item {
+      &-title {
+        grid-row: 1/2;
+        font-weight: 600;
+        align-self: end;
+        margin: 0;
+      }
 
-  &-title {
-    grid-row: 1/2;
-    font-weight: 600;
-    align-self: end;
-  }
-
-  &-text {
-    grid-row: 2/3;
-    font-size: 0.9em;
-  }
-
-  &-title,
-  &-text {
-    margin: 0;
+      &-text {
+        grid-row: 2/3;
+        font-size: 0.9em;
+        margin: 5px 0 0 0;
+      }
+    }
   }
 }
