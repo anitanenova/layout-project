@@ -461,6 +461,9 @@ summary {
 .btn-big {
   padding: 20px 95px; }
 
+.btn-small {
+  padding: 10px 15px; }
+
 .dropdown {
   position: relative; }
 
@@ -755,6 +758,31 @@ summary {
 .list-articles {
   display: flex;
   flex-flow: row wrap; }
+
+.section-resources-title {
+  margin-top: 5px; }
+
+.section-resources .section-info-title {
+  margin-top: 0; }
+
+.section-resources .section-info-text {
+  width: 73%;
+  line-height: 1.4em; }
+
+.section-resources .resources-content-wrapper {
+  margin-bottom: 30px; }
+
+.section-resources .resources-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9em; }
+
+.section-resources .resources-btn {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 500;
+  margin-right: 10px;
+  border-color: #b2b2b2; }
 
 /**
  * Foundation for Sites
@@ -1395,4 +1423,4 @@ summary {
 
 .home-main {
   display: grid;
-  grid-template-rows: 680px 1100px 1050px auto 1100px auto; }
+  grid-template-rows: 680px 1100px 1050px auto 1100px auto 500px 1000px; }

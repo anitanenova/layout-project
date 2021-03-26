@@ -1,0 +1,35 @@
+.section-resources {
+  &-title {
+    margin-top: 5px;
+  }
+
+  .section-info {
+    &-title {
+      margin-top: 0;
+    }
+    &-text {
+      width: 73%;
+      line-height: 1.4em;
+    }
+  }
+
+  .resources {
+    &-content-wrapper {
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.9em;
+    }
+
+    &-btn {
+      text-transform: uppercase;
+      font-size: 0.6em;
+      font-weight: 500;
+      margin-right: 10px;
+      border-color: $color-gray-600;
+    }
+  }
+}
