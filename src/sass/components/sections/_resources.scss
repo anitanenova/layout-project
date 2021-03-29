@@ -3,11 +3,12 @@
     margin-top: 5px;
   }
 
-  .section-info {
-    &-title {
+  .section-heading {
+    .heading-title {
       margin-top: 0;
     }
-    &-text {
+
+    .heading-subtitle {
       width: 75%;
     }
   }

@@ -636,11 +636,11 @@ summary {
   align-items: center;
   justify-content: center; }
 
-.section-articles .articles-title {
+.section-articles .section-heading .heading-title {
   margin-top: 0;
   margin-bottom: 10px; }
 
-.section-articles .articles-description {
+.section-articles .section-heading .heading-text {
   max-width: 40em;
   font-size: 1em;
   text-align: center;
@@ -772,7 +772,7 @@ summary {
 .section-literature .section-secondary {
   padding-left: 50px; }
 
-.section-literature .section-secondary .literature-title {
+.section-literature .section-secondary .section-heading .heading-title {
   font-weight: 600;
   margin-bottom: 40px; }
 
@@ -853,10 +853,10 @@ summary {
 .section-resources-title {
   margin-top: 5px; }
 
-.section-resources .section-info-title {
+.section-resources .section-heading .heading-title {
   margin-top: 0; }
 
-.section-resources .section-info-text {
+.section-resources .section-heading .heading-subtitle {
   width: 75%; }
 
 .section-resources .resources-content-wrapper {
