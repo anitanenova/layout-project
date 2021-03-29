@@ -214,7 +214,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -386,6 +386,11 @@ summary {
   flex-direction: row;
   align-items: center; }
 
+.centered-column-vertically {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
+
 .page-wrapper {
   min-height: 100%;
   display: grid;
@@ -450,6 +455,15 @@ summary {
   font-weight: 500;
   font-size: 0.6em;
   border-bottom: 1px solid #000000;
+  color: #000000; }
+
+.btn-inline-tiny {
+  font-weight: 600;
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  line-height: 2em;
+  width: fit-content;
+  border-bottom: 1px solid #868686;
   color: #000000; }
 
 .btn-primary {
@@ -766,8 +780,7 @@ summary {
   margin-top: 0; }
 
 .section-resources .section-info-text {
-  width: 73%;
-  line-height: 1.4em; }
+  width: 75%; }
 
 .section-resources .resources-content-wrapper {
   margin-bottom: 30px; }
@@ -779,10 +792,38 @@ summary {
 
 .section-resources .resources-btn {
   text-transform: uppercase;
-  font-size: 0.6em;
-  font-weight: 500;
+  font-size: 0.55em;
+  font-weight: 600;
   margin-right: 10px;
   border-color: #b2b2b2; }
+
+.section-description .description-title {
+  max-width: 60%;
+  margin: 0 auto 80px auto; }
+
+.section-description .description-image-wrapper {
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 2em; }
+
+.section-description .description-text {
+  max-width: 97%; }
+
+.text-feature-expanded {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  font-weight: 500; }
+
+.text-feature-default {
+  line-height: 1.4em;
+  font-weight: 600;
+  margin: 15px 0; }
 
 /**
  * Foundation for Sites
@@ -1423,4 +1464,4 @@ summary {
 
 .home-main {
   display: grid;
-  grid-template-rows: 680px 1100px 1050px auto 1100px auto 500px 1000px; }
+  grid-template-rows: 680px 1100px 1050px auto 1100px auto 500px 950px; }

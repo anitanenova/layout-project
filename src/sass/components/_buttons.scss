@@ -11,6 +11,16 @@
     color: $color-primary;
   }
 
+  &-inline-tiny {
+    font-weight: 600;
+    font-size: 1.4em;
+    letter-spacing: -1px;
+    line-height: 2em;
+    width: fit-content;
+    border-bottom: 1px solid $color-gray-700;
+    color: $color-primary;
+  }
+
   &-primary {
     border: 1px solid $color-primary;
     background-color: transparent;
