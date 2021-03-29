@@ -1,10 +1,11 @@
 .section-description {
-  .description {
-    &-title {
-      max-width: 60%;
-      margin: 0 auto 80px auto;
-    }
+  .section-heading {
+    width: 100%;
+    max-width: 45em;
+    margin: 0 auto 5em auto;
+  }
 
+  .description {
     &-image-wrapper {
       max-height: 500px;
       position: relative;

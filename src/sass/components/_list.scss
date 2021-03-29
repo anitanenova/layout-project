@@ -10,7 +10,7 @@
       font-size: 3.5em;
       font-weight: 500;
       grid-row: 1/3;
-      line-height: 0.8em;
+      line-height: 0.75em;
       align-self: flex-start;
     }
   }
@@ -31,7 +31,7 @@
 
       &-text {
         grid-row: 2/3;
-        font-size: 0.9em;
+        font-size: 1em;
         margin: 5px 0 0 0;
       }
     }

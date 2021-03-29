@@ -7,13 +7,13 @@
   }
 
   &-image-wrapper {
-    max-width: 300px;
     position: relative;
-    max-height: 350px;
 
-    img {
+    .article-image {
       width: 100%;
       height: 100%;
+      max-width: 18.75em;
+      max-height: 22em;
     }
 
     .article-image-badge {
@@ -23,7 +23,7 @@
   }
 
   &-info {
-    margin: 25px 0;
+    margin: 1.2em 0;
   }
 
   &-title {
@@ -32,9 +32,9 @@
   }
 
   &-position {
-    font-size: 0.8em;
+    font-size: 0.75em;
     font-weight: 500;
-    margin: 5px 0 10px 0;
+    margin: 0 0 0.625em;
   }
 
   &-title,
@@ -43,7 +43,7 @@
   }
 
   &-text {
-    font-size: 0.8em;
+    font-size: 0.75em;
     line-height: 1.5em;
     font-weight: 500;
     color: $color-gray-700;

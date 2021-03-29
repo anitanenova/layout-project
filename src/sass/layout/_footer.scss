@@ -1,11 +1,12 @@
-.footer {
-  padding: 85px;
+.section-footer {
+  padding: 5em 0;
 
-  &-info-wrapper {
+  .footer-info-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
     grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
   }
 
   .info {
@@ -24,21 +25,20 @@
     }
   }
 
-  &-logo {
-    .logo {
-      &-image {
-        max-width: 30px;
-        max-height: 30px;
-      }
+  .logo {
+    &-image {
+      max-width: 1.875em;
+      max-height: 1.875em;
+    }
 
-      &-name {
-        font-size: 1.3em;
-        font-weight: 600;
-        color: $color-primary;
-      }
+    &-name {
+      font-size: 1.25em;
+      font-weight: 600;
+      color: $color-primary;
     }
   }
-  &-contacts {
+
+  .contacts {
     justify-self: end;
 
     .info-title {
@@ -60,8 +60,8 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
+      width: 1.875em;
+      height: 1.875em;
       margin: 5px;
       background-color: $color-primary;
 
@@ -89,14 +89,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30px;
-        height: 30px;
+        width: 1.875em;
+        height: 1.875em;
         text-decoration: none;
       }
     }
   }
 
-  &-copyright {
+  .footer-copyright {
     text-transform: uppercase;
     font-size: 0.6em;
     letter-spacing: 0.1em;

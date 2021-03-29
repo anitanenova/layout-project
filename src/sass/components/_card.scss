@@ -2,7 +2,7 @@
   &-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 1.875em;
     margin-bottom: 6em;
     width: 100%;
     max-width: 500px;
@@ -27,7 +27,7 @@
   }
 
   &-title {
-    line-height: 1.4em;
+    line-height: 1.5em;
     margin: 15px 0;
   }
 }
