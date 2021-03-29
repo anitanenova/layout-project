@@ -822,14 +822,11 @@ summary {
 .card-image-wrapper {
   align-self: start;
   max-width: 150px;
-  border-radius: 50%;
-  max-height: 150px; }
-
-.card-image-wrapper img {
+  max-height: 150px;
   border-radius: 50%;
   height: 100%;
-  max-width: 150px;
-  max-height: 150px; }
+  width: 100%;
+  object-fit: cover; }
 
 .card-info {
   align-self: end; }
