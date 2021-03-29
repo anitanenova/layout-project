@@ -23,3 +23,9 @@
   flex-flow: column wrap;
   justify-content: center;
 }
+
+.centered-column-horizontally {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}

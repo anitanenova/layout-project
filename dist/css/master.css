@@ -391,6 +391,11 @@ summary {
   flex-flow: column wrap;
   justify-content: center; }
 
+.centered-column-horizontally {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+
 .page-wrapper {
   min-height: 100%;
   display: grid;
@@ -446,6 +451,90 @@ summary {
 
 .header-search:hover {
   cursor: pointer; }
+
+.footer {
+  padding: 85px; }
+
+.footer-info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-template-rows: 1fr 1fr; }
+
+.footer .info-title {
+  font-weight: 600;
+  color: #000000; }
+
+.footer .info-email {
+  color: #b2b2b2; }
+
+.footer .info-title, .footer .info-email {
+  margin: 5px 0; }
+
+.footer-logo .logo-image {
+  max-width: 30px;
+  max-height: 30px; }
+
+.footer-logo .logo-name {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #000000; }
+
+.footer-contacts {
+  justify-self: end; }
+
+.footer-contacts .info-title {
+  text-align: end; }
+
+.footer-contacts .footer-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.footer-contacts .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background-color: #000000; }
+
+.footer-contacts .nav-item:first-child {
+  margin-left: 0; }
+
+.footer-contacts .nav-item:last-child {
+  margin-right: 0; }
+
+.footer-contacts .nav-item:hover {
+  background-color: #383838; }
+
+.footer-contacts .nav-item:hover .footer-nav-item-link {
+  color: #000000; }
+
+.footer-contacts .nav-item-link {
+  color: #fff;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  text-decoration: none; }
+
+.footer-copyright {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #b2b2b2;
+  grid-column: 1/4;
+  justify-self: center; }
 
 .btn:hover {
   cursor: pointer; }
@@ -809,7 +898,7 @@ summary {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  padding-right: 2em; }
+  padding-right: 4em; }
 
 .section-description .description-text {
   max-width: 97%; }
