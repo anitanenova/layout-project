@@ -1,4 +1,6 @@
 .btn {
+  text-decoration: none;
+
   &:hover {
     cursor: pointer;
   }
@@ -15,7 +17,7 @@
     font-weight: 600;
     font-size: 1.5em;
     letter-spacing: -1px;
-    line-height: 2em;
+    line-height: 2;
     width: fit-content;
     border-bottom: 1px solid $color-gray-700;
     color: $color-primary;
@@ -29,10 +31,10 @@
   }
 
   &-big {
-    padding: 20px 95px;
+    padding: 1.25em 6em;
   }
 
   &-small {
-    padding: 10px 15px;
+    padding: 1.25em;
   }
 }

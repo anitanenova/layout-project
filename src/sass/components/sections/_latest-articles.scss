@@ -1,20 +1,25 @@
-.latest-articles-wrapper {
-  display: flex;
-  flex-direction: column;
+.section-latest-articles {
+  padding: 6em 0;
 
-  .articles {
-    &-title {
-      margin-top: 0;
-      margin-bottom: 1.6em;
+  .latest-articles-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .section-heading {
+      .heading-title {
+        margin-top: 0;
+        margin-bottom: 1.6em;
+      }
     }
-
-    &-btn {
-      align-self: center;
+    .articles {
+      &-btn {
+        align-self: center;
+      }
     }
   }
-}
 
-.list-articles {
-  display: flex;
-  flex-flow: row wrap;
+  .latest-articles {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }

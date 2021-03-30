@@ -5,13 +5,13 @@
     grid-column-gap: 1.875em;
     margin-bottom: 6em;
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25em;
   }
 
   &-image-wrapper {
     align-self: start;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 9.25em;
+    max-height: 9.25em;
     border-radius: 50%;
     height: 100%;
     width: 100%;
@@ -23,7 +23,7 @@
   }
 
   &-title {
-    line-height: 1.5em;
-    margin: 15px 0;
+    line-height: 1.5;
+    margin: 1em 0;
   }
 }

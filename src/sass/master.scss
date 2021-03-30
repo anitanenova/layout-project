@@ -5,19 +5,20 @@
 @import "utils/functions";
 @import "utils/mixins";
 @import "utils/breakpoints";
-@import "utils/centered";
 @import "utils/backgrounds";
 
 // 3. Base
-@import "base/fonts", "base/typography", "base/normalize", "base/containers",
-  "base/wrappers";
+@import "base/fonts";
+@import "base/typography";
+@import "base/normalize";
+@import "base/sections";
 
 // 4. Layout
-@import "layout/header", "layout/footer";
+@import "layout/header";
+@import "layout/footer";
 
 // 5. Components
 @import "components/buttons";
-@import "components/navigation";
 @import "components/dropdown";
 @import "components/sections/intro";
 @import "components/sections/articles";

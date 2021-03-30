@@ -80,24 +80,6 @@ h6,
   font-weight: 400;
 }
 
-p {
-  font-style: normal;
-  font-weight: normal;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-a,
-button {
-  font-style: normal;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-a {
-  font-weight: 600;
-}
-
 button {
   font-weight: 800;
 }
@@ -109,6 +91,6 @@ button {
 .default-text {
   font-weight: 600;
   font-size: 1em;
-  line-height: 1.7em;
+  line-height: 1.7;
   color: $color-gray-700;
 }

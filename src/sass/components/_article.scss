@@ -16,9 +16,9 @@
       max-height: 22em;
     }
 
-    .article-image-badge {
+    .image-badge-wrapper {
       position: absolute;
-      bottom: 2px;
+      bottom: 0.125em;
     }
   }
 
@@ -44,7 +44,7 @@
 
   &-text {
     font-size: 0.75em;
-    line-height: 1.5em;
+    line-height: 1.5;
     font-weight: 500;
     color: $color-gray-700;
   }
