@@ -1,58 +1,103 @@
 .section-header {
   width: 100%;
   border-bottom: 1px solid $color-gray-500;
+}
 
-  .header {
-    &-content-wrapper {
-      margin: 0 3em;
-      height: 100%;
-      padding: 3em 0;
-    }
+.header-content-wrapper {
+  margin: 0 3em;
+  height: 100%;
+  padding: 3em 0;
+}
 
-    &-main {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
+.header-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    &-logo {
-      font-size: 1.6em;
-      font-weight: 600;
-      color: $color-primary;
-    }
+.header-logo {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: $color-primary;
+}
 
-    &-navigation {
-      .menu {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-        display: flex;
-        &-item {
-          padding: 0 3.125em;
-        }
-        &-item-link {
-          color: $color-secondary;
-          font-size: 0.75em;
-          font-weight: 600;
-          letter-spacing: 0.09em;
-          text-decoration: none;
-        }
-      }
-    }
+.menu-mobile {
+  display: none;
 
-    &-search {
+  @media (max-width: $breakpoint-large) {
+    & {
+      display: block;
       padding: 1em;
+      cursor: pointer;
+    }
+  }
+}
 
-      & i {
-        color: $color-secondary;
-      }
+.header-navigation {
+  .menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    &-item {
+      padding: 0 3.125em;
+    }
+    &-item-link {
+      color: $color-secondary;
+      font-size: 0.75em;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-decoration: none;
+    }
+  }
 
-      &:hover {
-        cursor: pointer;
+  @media (max-width: $breakpoint-extra-large) {
+    .menu {
+      &-item {
+        padding: 0 1em;
       }
+    }
+  }
+
+  @media (max-width: $breakpoint-large) {
+    & {
+      display: none;
+      position: absolute;
+      top: 8em;
+      left: 0;
+      background: white;
+
+      border-bottom: 1px solid $color-gray-500;
+      width: 100%;
+      z-index: 1;
+      .menu {
+        flex-direction: column;
+
+        &-item {
+          padding: 0.5em 1em;
+        }
+      }
+    }
+  }
+}
+
+.header-search {
+  padding: 1em;
+
+  i {
+    color: $color-secondary;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: $breakpoint-large) {
+    & {
+      display: none;
     }
   }
 }

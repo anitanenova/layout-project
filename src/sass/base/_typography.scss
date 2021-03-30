@@ -1,7 +1,7 @@
 // Basic typography style
 
 html {
-  font-family: "Lexend", sans-serif;
+  font-family: $font-primary;
 }
 
 h1,
@@ -16,7 +16,7 @@ h6,
 .h4-like,
 .h5-like,
 .h6-like {
-  font-family: "Lora", serif;
+  font-family: $font-secondary;
 }
 
 @each $header,

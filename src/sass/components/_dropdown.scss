@@ -43,4 +43,12 @@
       }
     }
   }
+
+  @media (max-width: $breakpoint-large) {
+    &-menu {
+      position: relative;
+      top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }
 }

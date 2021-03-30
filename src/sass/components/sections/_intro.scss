@@ -1,34 +1,71 @@
 .section-intro {
-  padding: 10em 0;
+  position: relative;
+  top: 9em;
+  padding-top: 4em;
 
-  .section-intro-wrapper {
-    display: grid;
-    grid-template-rows: 1fr;
-    height: 100%;
-    grid-template-columns: 3fr 4fr;
-    grid-column-gap: 4.5em;
-    align-items: center;
-
-    .section-primary {
-      .intro {
-        &-subtitle {
-          text-transform: uppercase;
-          font-size: 0.625em;
-        }
+  .section-primary {
+    .heading {
+      &-title {
+        font-family: $font-secondary;
+      }
+      &-subtitle {
+        text-transform: uppercase;
+        font-size: 0.625em;
       }
     }
   }
 
   .section-secondary {
-    position: relative;
     height: 100%;
 
     .image-wrapper {
-      position: absolute;
-      top: -5em;
+      position: relative;
+      top: -1em;
 
       .intro-image {
+        width: 100%;
         max-width: 30em;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-large) {
+    & {
+      position: static;
+      padding: 5em 0;
+    }
+    .section-primary {
+      .heading-title {
+        font-size: 2em;
+      }
+    }
+
+    .section-secondary {
+      .image-wrapper {
+        .intro-image {
+          width: 100%;
+          max-width: 20em;
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-normal) {
+    .section-primary {
+      .heading-title {
+        line-height: 1.5em;
+        font-size: 1.5em;
+        margin: 0.5em 0;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-extra-small) {
+    .section-secondary {
+      .image-wrapper {
+        .intro-image {
+          width: 100%;
+          max-width: 15em;
+        }
       }
     }
   }
