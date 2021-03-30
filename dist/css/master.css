@@ -355,16 +355,16 @@ summary {
 .section-fullwidth {
   width: 100%; }
 
-.header {
+.section-header {
   width: 100%;
   border-bottom: 1px solid #e5e5e5; }
 
-.header-content-wrapper {
+.section-header .header-content-wrapper {
   margin: 0 3em;
   height: 100%;
   padding: 3em 0; }
 
-.header-main {
+.section-header .header-main {
   height: 100%;
   width: 100%;
   display: flex;
@@ -372,34 +372,34 @@ summary {
   align-items: center;
   justify-content: space-between; }
 
-.header-logo {
+.section-header .header-logo {
   font-size: 1.6em;
   font-weight: 600;
   color: #000000; }
 
-.header-navigation-menu {
+.section-header .header-navigation-menu {
   list-style: none;
   padding-left: 0;
   margin: 0;
   display: flex; }
 
-.header-navigation-menu-item {
+.section-header .header-navigation-menu-item {
   padding: 0 3.125em; }
 
-.header-navigation-menu-item-link {
+.section-header .header-navigation-menu-item-link {
   color: #383838;
   font-size: 0.75em;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-decoration: none; }
 
-.header-search {
+.section-header .header-search {
   padding: 1em; }
 
-.header-search i {
+.section-header .header-search i {
   color: #383838; }
 
-.header-search:hover {
+.section-header .header-search:hover {
   cursor: pointer; }
 
 .section-footer {
