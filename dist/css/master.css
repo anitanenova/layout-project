@@ -377,16 +377,16 @@ summary {
   font-weight: 600;
   color: #000000; }
 
-.section-header .header-navigation-menu {
+.section-header .header-navigation .menu {
   list-style: none;
   padding-left: 0;
   margin: 0;
   display: flex; }
 
-.section-header .header-navigation-menu-item {
+.section-header .header-navigation .menu-item {
   padding: 0 3.125em; }
 
-.section-header .header-navigation-menu-item-link {
+.section-header .header-navigation .menu-item-link {
   color: #383838;
   font-size: 0.75em;
   font-weight: 600;
@@ -558,13 +558,13 @@ summary {
   z-index: 1;
   list-style: none; }
 
-.dropdown-menu-item {
+.dropdown-menu .menu-item {
   padding: 0.25em 1em; }
 
-.dropdown-menu-item:hover {
+.dropdown-menu .menu-item:hover {
   background-color: #f9f9f9; }
 
-.dropdown-menu-item-link {
+.dropdown-menu .menu-item-link {
   color: #383838;
   font-size: 1em;
   font-weight: 500;

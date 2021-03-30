@@ -1,6 +1,7 @@
 .section-header {
   width: 100%;
   border-bottom: 1px solid $color-gray-500;
+
   .header {
     &-content-wrapper {
       margin: 0 3em;
@@ -24,23 +25,21 @@
     }
 
     &-navigation {
-      &-menu {
+      .menu {
         list-style: none;
         padding-left: 0;
         margin: 0;
         display: flex;
-      }
-
-      &-menu-item {
-        padding: 0 3.125em;
-      }
-
-      &-menu-item-link {
-        color: $color-secondary;
-        font-size: 0.75em;
-        font-weight: 600;
-        letter-spacing: 0.09em;
-        text-decoration: none;
+        &-item {
+          padding: 0 3.125em;
+        }
+        &-item-link {
+          color: $color-secondary;
+          font-size: 0.75em;
+          font-weight: 600;
+          letter-spacing: 0.09em;
+          text-decoration: none;
+        }
       }
     }
 
