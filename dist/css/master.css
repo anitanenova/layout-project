@@ -357,7 +357,10 @@ summary {
 
 .section-header {
   width: 100%;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  z-index: 1;
+  background: #ffffff; }
 
 .header-content-wrapper {
   margin: 0 3em;
@@ -1639,3 +1642,10 @@ summary {
     margin-bottom: 1.875rem; }
   .column-block > :last-child {
     margin-bottom: 0; } }
+
+.home-main {
+  padding-top: 9em; }
+
+@media (max-width: 1023px) {
+  .home-main {
+    padding-top: 5em; } }
