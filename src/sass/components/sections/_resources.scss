@@ -14,7 +14,8 @@
     }
 
     .heading-subtitle {
-      width: 24em;
+      width: 100%;
+      max-width: 24em;
     }
   }
 
@@ -33,8 +34,16 @@
       text-transform: uppercase;
       font-size: 0.55em;
       font-weight: 600;
-      margin-right: 0.625em;
+      margin: 0 0.625em 0.625em 0;
       border-color: $color-copy-light;
+    }
+  }
+
+  @media (max-width: $breakpoint-normal) {
+    padding: 4em 0;
+
+    .section-heading {
+      margin-bottom: 3em;
     }
   }
 }

@@ -8,17 +8,24 @@
     max-width: 31.25em;
   }
 
-  &-image-wrapper {
-    align-self: start;
-    max-width: 9.25em;
-    max-height: 9.25em;
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  &-aside {
+    .image-wrapper {
+      position: relative;
+      padding-bottom: 100%;
+
+      .card-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        max-width: 9.25em;
+        max-height: 9.25em;
+        border-radius: 50%;
+      }
+    }
   }
 
-  &-info {
+  &-main {
     align-self: end;
   }
 
@@ -27,5 +34,21 @@
     margin: 0.875em 0;
     font-size: 1.3em;
     font-weight: 600;
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    &-wrapper {
+      margin-bottom: 3em;
+    }
+
+    &-title {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: $breakpoint-small) {
+    &-main {
+      align-self: center;
+    }
   }
 }

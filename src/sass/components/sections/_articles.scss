@@ -22,4 +22,32 @@
       margin-bottom: 4.5em;
     }
   }
+
+  @media (max-width: $breakpoint-large) {
+    padding: 5em 0;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    padding: 3em 0;
+
+    .section-heading {
+      max-width: 20em;
+
+      .heading-title {
+        font-size: 2em;
+      }
+
+      .heading-text {
+        margin-bottom: 2.5em;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-extra-small) {
+    .section-heading {
+      .heading-title {
+        font-size: 1.5em;
+      }
+    }
+  }
 }

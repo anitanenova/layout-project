@@ -117,4 +117,29 @@
     align-self: end;
     justify-self: center;
   }
+
+  @media (max-width: $breakpoint-small) {
+    padding: 4em 0;
+
+    .footer-info-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr 1fr auto;
+      align-items: center;
+      justify-items: center;
+      grid-row-gap: 2em;
+    }
+
+    .footer-info {
+      text-align: center;
+    }
+
+    .contacts {
+      justify-self: center;
+    }
+    .footer-copyright {
+      grid-column: 1/2;
+      align-self: center;
+      text-align: center;
+    }
+  }
 }
