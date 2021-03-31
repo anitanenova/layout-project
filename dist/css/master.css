@@ -2,6 +2,16 @@
 .section-light {
   background-color: #f6f4ef; }
 
+@media (max-width: 1023px) {
+  .maxwidth {
+    width: 100%;
+    max-width: 70% !important; } }
+
+@media (max-width: 768px) {
+  .maxwidth {
+    width: 100%;
+    max-width: 80% !important; } }
+
 html {
   font-family: "Lexend", sans-serif; }
 
@@ -399,7 +409,9 @@ summary {
   .section-mobile .mobile-search {
     display: block;
     padding: 1em;
-    cursor: pointer; } }
+    cursor: pointer; }
+  .section-mobile .mobile-search i {
+    color: #383838; } }
 
 .menu-mobile {
   display: none; }
@@ -658,7 +670,7 @@ summary {
   padding-top: 4em; }
 
 .section-intro .section-primary .heading-title {
-  font-family: "Lora", serif; }
+  font-family: "Lexend", sans-serif; }
 
 .section-intro .section-primary .heading-subtitle {
   text-transform: uppercase;
@@ -727,6 +739,10 @@ summary {
   .section-articles {
     padding: 5em 0; } }
 
+@media (max-width: 768px) {
+  .section-articles {
+    padding: 5em 0; } }
+
 @media (max-width: 640px) {
   .section-articles {
     padding: 3em 0; }
@@ -771,6 +787,7 @@ summary {
   letter-spacing: 0.2em; }
 
 .image-text {
+  font-family: "Lora", serif;
   font-size: 1em;
   line-height: 1.5;
   text-align: center; }
@@ -834,6 +851,7 @@ summary {
   margin: 1.2em 0; }
 
 .article-title {
+  font-family: "Lexend", sans-serif;
   font-weight: 600;
   font-size: 1.2em; }
 
@@ -891,10 +909,14 @@ summary {
   height: 100%;
   margin-bottom: 2.75em; }
 
+.section-literature .section-primary .heading-title {
+  font-family: "Lexend", sans-serif; }
+
 .section-literature .section-secondary {
   padding-left: 3.125em; }
 
 .section-literature .section-secondary .section-heading .heading-title {
+  font-family: "Lexend", sans-serif;
   font-weight: 600;
   margin-bottom: 1.5em; }
 
@@ -909,6 +931,10 @@ summary {
     padding: 4em 0; }
   .section-literature .heading-title {
     font-size: 1.5em; } }
+
+@media (max-width: 640px) {
+  .section-literature .section-secondary {
+    padding-left: 0; } }
 
 .list-ordered {
   counter-reset: number;
@@ -935,7 +961,8 @@ summary {
   grid-row: 1/2;
   font-weight: 600;
   align-self: end;
-  margin: 0; }
+  margin: 0;
+  font-family: "Lexend", sans-serif; }
 
 .list-item .item-text {
   grid-row: 2/3;

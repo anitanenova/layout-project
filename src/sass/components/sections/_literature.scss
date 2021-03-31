@@ -7,11 +7,18 @@
     margin-bottom: 2.75em;
   }
 
+  .section-primary {
+    .heading-title {
+      font-family: $font-primary;
+    }
+  }
+
   .section-secondary {
     padding-left: 3.125em;
 
     .section-heading {
       .heading-title {
+        font-family: $font-primary;
         font-weight: 600;
         margin-bottom: 1.5em;
       }
@@ -31,6 +38,11 @@
 
     .heading-title {
       font-size: 1.5em;
+    }
+  }
+  @media (max-width: $breakpoint-small) {
+    .section-secondary {
+      padding-left: 0;
     }
   }
 }

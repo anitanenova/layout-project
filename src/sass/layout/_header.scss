@@ -47,6 +47,10 @@
       display: block;
       padding: 1em;
       cursor: pointer;
+
+      i {
+        color: $color-copy-dark;
+      }
     }
   }
 }
