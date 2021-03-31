@@ -76,15 +76,10 @@
 
   @media (max-width: $breakpoint-small) {
     &-description {
+      position: relative;
+      top: 2em;
       right: 0;
-      top: 8em;
-    }
-  }
-
-  @media (max-width: $breakpoint-extra-small) {
-    &-description {
-      right: 0;
-      top: 4em;
+      margin: 0 auto;
     }
   }
 }

@@ -7,6 +7,11 @@
   margin: 0 3em;
   height: 100%;
   padding: 3em 0;
+
+  @media (max-width: $breakpoint-large) {
+    padding: 1em 0;
+    margin: 0 1.5em;
+  }
 }
 
 .header-main {
@@ -28,11 +33,9 @@
   display: none;
 
   @media (max-width: $breakpoint-large) {
-    & {
-      display: block;
-      padding: 1em;
-      cursor: pointer;
-    }
+    display: block;
+    padding: 1em;
+    cursor: pointer;
   }
 }
 
@@ -63,22 +66,21 @@
   }
 
   @media (max-width: $breakpoint-large) {
-    & {
-      display: none;
-      position: absolute;
-      top: 8em;
-      left: 0;
-      background: white;
+    display: none;
+    position: absolute;
+    top: 5em;
+    padding-bottom: 1em;
+    left: 0;
+    background: white;
 
-      border-bottom: 1px solid $color-separator;
-      width: 100%;
-      z-index: 1;
-      .menu {
-        flex-direction: column;
+    border-bottom: 1px solid $color-separator;
+    width: 100%;
+    z-index: 1;
+    .menu {
+      flex-direction: column;
 
-        &-item {
-          padding: 0.5em 1em;
-        }
+      &-item {
+        padding: 0.5em 1em;
       }
     }
   }

@@ -1,6 +1,6 @@
 .section-intro {
   position: relative;
-  top: 9em;
+  top: 5em;
   padding-top: 4em;
 
   .section-primary {
@@ -30,10 +30,9 @@
   }
 
   @media (max-width: $breakpoint-large) {
-    & {
-      position: static;
-      padding: 5em 0;
-    }
+    position: static;
+    padding: 5em 0;
+
     .section-primary {
       .heading-title {
         font-size: 2em;
@@ -49,6 +48,7 @@
       }
     }
   }
+
   @media (max-width: $breakpoint-normal) {
     .section-primary {
       .heading-title {
@@ -57,14 +57,26 @@
         margin: 0.5em 0;
       }
     }
-  }
 
-  @media (max-width: $breakpoint-extra-small) {
     .section-secondary {
       .image-wrapper {
         .intro-image {
           width: 100%;
           max-width: 15em;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-small) {
+    padding: 3em 0 4em 0;
+
+    .section-secondary {
+      .image-wrapper {
+        top: 0;
+
+        .intro-image {
+          display: none;
         }
       }
     }
