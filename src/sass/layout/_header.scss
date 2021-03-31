@@ -29,6 +29,25 @@
   color: $color-copy;
 }
 
+.section-mobile {
+  display: none;
+
+  .mobile-search {
+    display: none;
+  }
+  @media (max-width: $breakpoint-large) {
+    display: block;
+    display: flex;
+    flex-direction: row;
+
+    .mobile-search {
+      display: block;
+      padding: 1em;
+      cursor: pointer;
+    }
+  }
+}
+
 .menu-mobile {
   display: none;
 
@@ -66,7 +85,7 @@
   }
 
   @media (max-width: $breakpoint-large) {
-    display: none;
+    // display: none;
     position: absolute;
     top: 5em;
     padding-bottom: 1em;
@@ -76,6 +95,8 @@
     border-bottom: 1px solid $color-separator;
     width: 100%;
     z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-100%);
     .menu {
       flex-direction: column;
 

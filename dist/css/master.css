@@ -382,6 +382,22 @@ summary {
   font-weight: 600;
   color: #000000; }
 
+.section-mobile {
+  display: none; }
+
+.section-mobile .mobile-search {
+  display: none; }
+
+@media (max-width: 1023px) {
+  .section-mobile {
+    display: block;
+    display: flex;
+    flex-direction: row; }
+  .section-mobile .mobile-search {
+    display: block;
+    padding: 1em;
+    cursor: pointer; } }
+
 .menu-mobile {
   display: none; }
 
@@ -413,7 +429,6 @@ summary {
 
 @media (max-width: 1023px) {
   .header-navigation {
-    display: none;
     position: absolute;
     top: 5em;
     padding-bottom: 1em;
@@ -421,7 +436,9 @@ summary {
     background: white;
     border-bottom: 1px solid #e5e5e5;
     width: 100%;
-    z-index: 1; }
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-100%); }
   .header-navigation .menu {
     flex-direction: column; }
   .header-navigation .menu-item {
