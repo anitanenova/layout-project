@@ -1,5 +1,5 @@
 .section-articles {
-  background-color: $color-beige-300;
+  background-color: $color-base-light;
   padding: 12em 0 10em 0;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
       text-align: center;
       line-height: 1.5;
       font-weight: 500;
-      color: $color-gray-700;
+      color: $color-copy-muted;
       margin-bottom: 4.5em;
     }
   }

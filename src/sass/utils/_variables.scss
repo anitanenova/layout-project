@@ -1,16 +1,15 @@
-// This file contains all application-wide Sass variables.
+// colors
+$color-base-light: #f6f4ef;
+$color-copy: #000000;
+$color-copy-dark: #383838;
+$color-copy-muted: #868686;
+$color-copy-light: #b2b2b2;
 
-//  variables for colors
-$color-primary: #000000;
-$color-secondary: #383838;
+$color-separator: #e5e5e5;
 
-$color-gray-700: #868686;
-$color-gray-600: #b2b2b2;
-$color-gray-500: #e5e5e5;
-$color-gray-300: #f9f9f9;
+$color-bg-dropdown: #f9f9f9;
+$color-bg-dropdown-white: #ffffff;
 
-$color-beige-300: #f6f4ef;
-$color-white: #ffffff;
-
+// fonts
 $font-primary: "Lexend", sans-serif;
 $font-secondary: "Lora", serif;
